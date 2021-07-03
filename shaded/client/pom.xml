@@ -170,8 +170,8 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <createSourcesJar>true</createSourcesJar>
-              <shadeSourcesContent>true</shadeSourcesContent>
+              <createSourcesJar>false</createSourcesJar>
+              <shadeSourcesContent>false</shadeSourcesContent>
               <createDependencyReducedPom>${create.dependency.reduced.pom}</createDependencyReducedPom>
               <artifactSet>
                 <excludes>
@@ -183,7 +183,7 @@
                   <exclude>log4j:log4j</exclude>
                   <exclude>org.apache.logging.log4j:log4j-api</exclude>  
                   <exclude>org.apache.logging.log4j:log4j-core</exclude> 
-                  <exclude>org.apache.logging.log4j:log4j-slf4j-impl</exclude> 
+                  <exclude>org.apache.logging.log4j:log4j-slf4j-impl</exclude>
                 </excludes>
               </artifactSet>
               <filters>
